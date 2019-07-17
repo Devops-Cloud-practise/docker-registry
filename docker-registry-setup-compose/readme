@@ -6,4 +6,4 @@ In this we are using Docker-Compose to run registry container.
 Here we have assigned two IP address and are hardcoded. This is require sequential set up means first Registry-server VM is created and later client. Please refer provisioners to learn about set up.
 Registry-server is TLS enabled and password protected. username / password - testuser/testpassword.
 
-API call to test registry-server - curl -k -X GET https:registry-server:port/v2/catalog
+API call to test registry-server - curl -k -X GET https:registry-server:port/v2/_catalog

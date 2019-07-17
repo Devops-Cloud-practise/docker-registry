@@ -7,4 +7,4 @@ Here we have assigned two IP address and are hardcoded. This is require sequenti
 
 Registry-server is TLS enabled and password protected. username / password - testuser/testpassword.
 
-API call to test registry-server - curl -k -X GET https:registry-server:port/v2/catalog
+API call to test registry-server - curl -k -X GET https:registry-server:port/v2/_catalog
