@@ -1,0 +1,9 @@
+This set up have vagrant file which creates two VMs (registry-server which has one additional
+disk and that is partitioned as two LVM partition. One is mounted for Docker and other for registry). Client VM just has docker and created to test registry-server.
+
+In this we are using Docker-Compose to run registry container. 
+
+Here we have assigned two IP address and are hardcoded. This is require sequential set up means first Registry-server VM is created and later client. Please refer provisioners to learn about set up.
+Registry-server is TLS enabled and password protected. username / password - testuser/testpassword.
+
+API call to test registry-server - curl -k -X GET https:registry-server:port/v2/catalog
